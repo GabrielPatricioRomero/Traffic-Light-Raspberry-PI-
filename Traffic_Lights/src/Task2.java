@@ -588,7 +588,6 @@ static double mins;
 
 
 
-//9.- Static variable  are used to store codes for different colors which makes text in user interface better for user.
 
 private static String cyancolour="\u001B[36m";
 
@@ -604,12 +603,9 @@ static String magentacolour="\u001B[35m";
 
 
 
-//7.- Static variable to track the state of program.
 
 private static  boolean program = false;
 
-//8.- 
-//are static variable representing arrays of integers. They store RGB values for the colour red blue green etc.
 
 static  int[] RED = new int[] { 255, 0, 0 };
 static  int[] BLUE = new int[] { 0, 255, 0 };
@@ -617,154 +613,6 @@ static  int[] GREEN = new int[] { 0, 0, 255 };
 static  int[] YELLOW = new int[] { 255, 0, 255 };
 
 
-/*
 
-What is OOP? 
-
-
---> Is about creating objects that contain data and methods and reduce the repetition of code 
-
-Concepts of OOP? 
-
-
----> 
-
-1.- Classes and Objects 
-
-1.- Class is a template used to create objects
-
-2.- Objects is an instance for classes (it is made of attributes and methods) 
-
-
-2.-Encapsulation 
-
-- Is to make sure that sensitive data is hidden from users in a program.
--in order to get this you should declare variables and attributes as private 
--To modify and get access to it we can use the get and set methods
--Can only be accesed within the same class ( an outside class has no access to it).
--Increase security of data.
-
-
-3.- Inheritance
-
-
--Allow a class to inherit properties and behaviour from another class.
-
-
-4.- Polymorphism
-
-- It occurs when we have many classes that are related to each other by inheritance.
-This allows us  to perform different task and perform a single action in different ways.
-
-
-5.- Abstraction
-
-- Is the process of hiding certain detaills and showing only essential information to the user 
-- Hide certain things and only show the important detaills of an object.
-
-
-Why is it useful?
-
-
-----> 1.- Is faster and easier to execute, 
-      2.- provides clear structure for the programs
-      3.- Makes the code easier to maintain and modify.
-
-
-What are classes and objects?
------> 
-
-
-What does it mean void in a method?
-
-
------> It Is used to declare a method which  does not return any value.
-
-
-Why is good to use methods?
-
-
------> Break down a program into smaller more manageable pieces.
-
-
-Where a class and object is in the code?
-
-
------>
-Task2: 
-
-It interacts with other classes and objects to control the behavior of the SwiftBot.
-
-SwiftBotAPI: This is a class provided by the swiftbot library
-, used to interact with the SwiftBot robot. 
-
-The sb object  is created to access the functionalities provided by this class.
-
-BufferedImage: This class  is used to represent images.
-
- It is used to capture still images from the SwiftBot's camera.
-
-FileWriter, PrintStream, FileOutputStream: These are classes are used for writing data to files. 
-
-
-
-
-sb: An object of the SwiftBotAPI class used to interact with the SwiftBot robot, enabling movement, capturing images, and detecting objects.
-
-Photo: An object of the BufferedImage class used to store captured images from the SwiftBot's camera.
-
-Writer, Stream: Objects of FileWriter and PrintStream classes used to write data to a text file.
-
-
-
-
-
-What is a private method vs public method? 
-------> 1.- Public the code is accessible for all classes 
-        2.- Private the code is only accessible within the declared class.
-
-
-What is Static?
-
------> Attributes and methods belong to the class rather than an object.
-
-Static variable vs local variable? 
-
--> Static variable belongs to the class itself  and it is shared among all instances of the class.
-
-->local variable is declared within a method
-
-
-Show where have you implemented OOP  in your code.
-
-3.- Abstraction->
- Each method in the code performs a specific task. 
- It focuses on showing only essential features of an object and hiding the complexity.
-
-4.-  The class contains static variables. These variables are  shared among all instances of the class, e.g changing the value of red count in one instance of Task 2 will affect the value of redcount 
-in all instances. They are used when data needs to be shared among all instances.
-
-
-1.- OOP is a way to organize code making it  easier to undertand and  maintain.
-
-
-
-There are some OOP in your code? Yes
-
-Class Definition: The code defines a class named Task2.
-
-Encapsulation: Methods like Ultrasound(), Ultrasound2(), Image_Recognition(), Red_mode(), Green_mode(), Blue_mode(), Store_and_Calculation(), Text_file(), and StopProgram() 
-encapsulate specific functionalities.
- It bundles data and methods that operate on the data into a single unit (class).
-
-Abstraction: Each method in the code performs a specific task,  It focuses on showing only essential features of an object and hiding the complexity.
-
- The class contains static variables (redcount, bluecount, greencount, starttime, endtime, mills, mins, cyancolour, whitecolour, yellowcolour, greencolour, redcolour, magentacolour, program)
- and static methods (main(), Ultrasound(), Ultrasound2(), Image_Recognition(), Red_mode(), Green_mode(), Blue_mode(), Store_and_Calculation(), Text_file(), StopProgram()).
-  Static members are shared among all instances of the class, which aligns with the class-level behavior and is a basic concept of OOP.
-
-
-
- */
 
 }
